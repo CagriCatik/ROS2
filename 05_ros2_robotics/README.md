@@ -1,110 +1,49 @@
-<div align="center">
+# ROS2: Robotics
 
-  <img src="assets/img/logo.png" alt="logo" width="200" height="auto" />
-  <h1>ROS2 Robotics for Beginners</h1>
-  <p>
-    Building Custom Robot, Nodes, Workspaces and Packages
-  </p>
+This guide is structured to provide you with a detailed and practical approach to creating and managing robots using ROS2, offering step-by-step instructions and insights into various aspects of robotic development.
 
-  
-<!-- Badges -->
-<p>
-  <a href="https://github.com/CagriCatik/ros2robotics/graphs/contributors">
-    <img src="https://img.shields.io/github/contributors/cagricatik/ros2robotics" alt="contributors" />
-  </a>
-  <a href="">
-    <img src="https://img.shields.io/github/last-commit/CagriCatik/ros2robotics" alt="last update" />
-  </a>
-  <a href="https://github.com/CagriCatik/ros2robotics/network/members">
-    <img src="https://img.shields.io/github/forks/CagriCatik/ros2robotics" alt="forks" />
-  </a>
-  <a href="https://github.com/CagriCatik/ros2robotics/stargazers">
-    <img src="https://img.shields.io/github/stars/CagriCatik/ros2robotics" alt="stars" />
-  </a>
-  <a href="https://github.com/CagriCatik/ros2robotics/issues/">
-    <img src="https://img.shields.io/github/issues/CagriCatik/ros2robotics" alt="open issues" />
-  </a>
-</p>
-   
- </div>
+## Custom Robot Creation
 
+In this section, we delve into the fundamentals of creating a custom robot from scratch. You'll learn about the essential workflows, setting up your workspace, and creating packages. We will guide you through the process of defining your robot using URDF (Unified Robot Description Format) and building a functional robot model.
 
+1. [Introduction](01_intro.md) - An overview of the concepts and goals of custom robot creation.
+2. [Workflow](02_workflow.md) - Detailed explanation of the development workflow in ROS2.
+3. [Creating Workspace](03_create-ws.md) - Steps to set up your ROS2 workspace.
+4. [Creating Package](04_creating-package.md) - How to create and organize packages in ROS2.
+5. [URDF Robot](05_urdf-robot.md) - Introduction to URDF and how to define your robot.
+6. [URDF Tree](06_urdf-tree.md) - Understanding the URDF tree structure.
+7. [Rover URDF](07_rover-urdf.md) - Creating a URDF model for a rover.
+8. [Launch Files](08_launch-files.md) - How to create and use launch files in ROS2.
+9. [Gazebo](09_gazebo.md) - Introduction to Gazebo simulation with ROS2.
+10. [Gazebo Plugins](10_gazebo-plugins.md) - Utilizing plugins in Gazebo for extended functionalities.
+11. [Differential Drive](11_differential-drive.md) - Implementing differential drive for your robot.
+12. [Camera and Lidar](12_camera-lidar.md) - Integrating camera and Lidar sensors with your robot.
 
-<!-- Table of Contents -->
-# Table of Contents
+## Rover Custom Robot
 
-This repository covers all the new features of ROS 2 using various examples from different sources:
+This section focuses on a specific example of a custom robot: a rover designed for obstacle avoidance and navigation. It covers the use of Lidar for perception and algorithms for obstacle avoidance and wall-following behaviors.
 
-1. [Custom Robot Creation for ROS Projects](https://github.com/CagriCatik/pg-ros/tree/main/5_ROS2_Robotics/part1)
-2. [Rover Custom Robot for Wall Following and Obstacle Avoiding](https://github.com/CagriCatik/pg-ros/tree/main/5_ROS2_Robotics/part2)
-3. [Toyota Prius Computer Vision for Line Following](https://github.com/CagriCatik/pg-ros/tree/main/5_ROS2_Robotics/part3)
+1. [Introduction](01_intro.md) - Overview of the rover project and its objectives.
+2. [Avoid Obstacles](02_avoid-obstacles.md) - Techniques and strategies for obstacle avoidance.
+3. [Lidar Plugin](03_lidar-plugin.md) - Setting up and using the Lidar plugin in your rover.
+4. [Lidar Data Manipulation](04_lidar-data-manipulation.md) - Processing Lidar data for navigation.
+5. [Obstacle Avoiding](05_obstacle-avoiding.md) - Implementing obstacle avoidance behavior.
+6. [Follow Wall](06_follow-wall.md) - Methods for wall-following navigation.
+7. [Following Wall](07_following-wall.md) - Practical application of wall-following algorithms.
 
+## Toyota Prius CV Lane Following
 
-<!-- About the Project -->
-## About this Repository
+In this section, we explore the application of computer vision in autonomous driving using a Toyota Prius model. You'll learn about obtaining the car model, creating the necessary packages, and using computer vision techniques for lane following.
 
-Some text
+1. [Prius Car](01_prius-car.md) - Introduction to the Prius car model.
+2. [Obtain Model](02_obtain-model.md) - Steps to obtain and integrate the Prius car model.
+3. [Create Package](03_create-package.md) - Setting up the package for the Prius project.
+4. [World Files](04_world-files.md) - Creating and configuring world files for simulation.
+5. [Camera Node](05_camera-node.md) - Setting up the camera node for image capture.
+6. [CV Image Segmentation](06_cv-image-segmentation.md) - Techniques for image segmentation using computer vision.
+7. [CV Boundary Extraction](07_cv-boundary-extraction.md) - Extracting boundaries from segmented images.
+8. [CV Frame Car Mid-Point](08_cv-frame-car-mid-point.md) - Calculating the car's mid-point using computer vision.
+9. [Programming Mid-Point](09_programming-mid-point.md) - Implementing mid-point calculations in your program.
+10. [Control Algorithm Output](10_control-algorithm-output.md) - Developing and testing the control algorithm for lane following.
 
-## Install ROS2 and Setup Your Environment
-
-### Install development packages
-
-- Different packages, which provide to development in ROS2
-  
-  ```sh
-  chmod +x /install/requirements.sh
-  bash install.sh
-  ```
-
-### Install ROS2 Galactic Geochelone on Ubuntu 20.04
-
-- Run single line code for installation Galactic Geochelone
-
-  ```sh
-  chmod +x ros2beginners/install/ros2_install_galactic.sh
-  bash ros2_install_galactic.sh
-  ```
-
-### Setup your Environment for ROS2
-
-- Source the environment before you use ROS2 and set up it by sourcing the following echo command in bashrc so that bash runs whenever it is started interactively.
-
-  ```sh
-  echo 'source /opt/ros/galactic/setup.bash' >> ~/.bashrc 
-  echo 'source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash' >> ~/.bashrc 
-  ```
-
-## Configuring the ROS 2 environment and workspace
-
-### Create a ROS2 workspace in your home directory
-
-- Make a directory for source code and build it with colcon command
-- In ROS2, no more catkin. Ament is the new building system, and on top of that you get the colcon command line tool.
-- To compile, you’ll use the command “colcon build” in your ROS2 workspace.
-
-  ```sh
-  mkdir .p ~/beginners_ws/src
-  cd ws
-  colcon build
-  cd install
-  echo 'source ~/<>/ws/<>/install/local_setup.bash' >> ~/.bashrc 
-  echo 'source ~/<>/ws/<>/install/setup.bash' >> ~/.bashrc 
-  ```
-
-### Create a Package inside this workspace
-
-- Create Python package
-  
-  ```sh
-  cd beginners_ws/src/
-  # Create a package with ament_python and rclpy client library
-  ros2 pkg create my_py_pkg --build-type ament_python --dependencies rclpy
-  cd beginners_ws
-  colcon build --packages-select my_py_pkg
-  ```
-
-
-## Acknowledgements
-
- - [ROS2 Robotics for Beginners](https://www.udemy.com/course/ros2-ultimate-mobile-robotics-course-for-beginners-opencv/)
- - [Readme Template](https://github.com/othneildrew/Best-README-Template)
+This guide aims to equip you with the knowledge and tools needed to build sophisticated robotic systems using ROS2. Each section is designed to be comprehensive and practical, ensuring you gain hands-on experience and a deep understanding of the topics covered.
