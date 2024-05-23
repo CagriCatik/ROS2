@@ -34,8 +34,13 @@
 
 ## [ROS2 - Nav2](04_ros2_nav2/README.md)
 
-- text
-- text
+- Introduction
+- Generate a Map with SLAM
+- Navigating with Nav2
+- Understanding the Nav2 Stack
+- Custom World Development for Navigation in Gazebo
+- Adapting a Custom Robot for Nav2
+- Programmatic Interaction with the Navigation Stack
 
 ## [ROS2 - Robotics](05_ros2_projects/README.md)
 
