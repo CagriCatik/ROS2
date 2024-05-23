@@ -1,39 +1,82 @@
-# ROS 2 Advanced Concepts
+# ROS2 - Advanced Concepts 🚀
 
-This repository provides a structured collection of examples and tutorials to help you master advanced features of ROS 2. The repository is organized into various subdirectories, each focusing on a specific advanced topic.
+## Introduction 
+- How to Follow this Course
+- Setup Your Environment (+ Tools)
+- Node OOP Template
 
-## Introduction
+## ROS2 Actions Python 💻
+- Why and When to Use ROS 2 Actions
+- How do ROS 2 Actions Work?
+- Create an Action Definition
+- Write a Minimal Python Action Server
+- Write a Minimal Python Action Client
+- Accept or Reject a Goal
+- Goal State Machine Explained
+- Set a Goal as Succeeded or Aborted
+- Send Goal Feedback
+- Cancel a Goal
+- Introspect Actions with ros2 action (command line)
+- Goal Policy: Multiple Goals in Parallel
+- Goal Policy: Refuse New Goal if Current Goal is Active
+- Goal Policy: Preempt Current Goal if New Goal Received
+- Goal Policy: Queue Goals
 
-This directory includes an introduction to ROS 2 concepts with an object-oriented programming (OOP) template for nodes.
+## ROS2 Actions C++ 💻
+- C++ Action Server
+- C++ Action Client
+- Accept or Reject a Goal (C++)
+- Set a Goal as Succeeded or Aborted (C++)
+- Send Goal Feedback (C++)
+- Cancel a Goal (C++)
+- Goal Policy: Multiple Goals in Parallel (C++)
+- Goal Policy: Refuse New Goal if Current Goal is Active (C++)
+- Goal Policy: Preempt Current Goal if New Goal Received (C++)
+- Goal Policy: Queue Goals (C++)
 
-## Actions - Python
+## ROS2 Actions - Challenge 💡
+- Step 1 - Create and Generate the Action
+- Step 2 - Action Server
+- Step 3 - Action Client
+- Step 4 - Accept Goal and Goal Policy
+- Step 5 - Cancel with a Subscriber
+- Actions Challenge - C++ Code
 
-Examples and tutorials on creating and using actions in ROS 2 with Python.
+## ROS2 Lifecycle Nodes 🔄
+- What are Lifecycle Nodes, When to Use Them
+- Code Setup
+- Write a Lifecycle Node in Python
+- Transition Between States (with ros2 lifecycle cmd line)
+- Processing Errors
+- Lifecycle Node Manager (using Lifecycle Services)
+- Create a Launch File for Lifecycle Nodes
+- Write a Lifecycle Node in C++
+- Intro
+- Step 1 - Transform the Node Into a Lifecycle Node
+- Step 2 - Start Several Nodes (Params + Launch File)
+- Step 3 - Lifecycle Manager
+- Lifecycle Node Challenge - C++
 
-## Actions - C++
+## ROS2 Executors ⚙️
+- Understand How Callbacks and Spin Work
+- The SingleThreaded Executor
+- Multi-Threaded Executor and Callback Groups
+- Which Executor/Callback Group Should You Use?
+- Going back to the Actions Server Example
+- Run Several Nodes in One Executable
+- Executors With C++
 
-Examples and tutorials on creating and using actions in ROS 2 with C++.
+## ROS2 Components 🔧
+- Manual Composition with Python
+- Manual Composition with C++
+- Create a ROS2 Component (plugin)
+- Load a Component at Run-Time with ros2 component cmd line
+- Load Components From a Launch File
 
-## Subproject - Actions
-
-A subproject demonstrating the integration and use of actions within a larger ROS 2 project.
-
-## Lifecycle Nodes
-
-Tutorials and examples on creating and managing lifecycle nodes in ROS 2.
-
-## Subproject - Lifecycle Nodes
-
-A subproject showcasing the use of lifecycle nodes in a comprehensive ROS 2 application.
-
-## Executors
-
-Examples and explanations of different types of executors in ROS 2, including single-threaded and multi-threaded executors.
-
-## Components
-
-Tutorials on creating and using components (also known as nodelets) in ROS 2 for more efficient node composition.
-
-## Final Project
-
-A final project that integrates all the advanced concepts covered in the previous directories into a cohesive application.
+## Project 🛠️
+- Step 1 - Base Node and Executor
+- Step 2 - Action Server
+- Step 3 - Lifecycle Node
+- Step 4 - Component
+- Step 5 - Launch File
+- Step 6 - Adapt for Turtlebot3 in Gazebo
