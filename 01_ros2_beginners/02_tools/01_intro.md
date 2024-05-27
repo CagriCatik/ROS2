@@ -1,10 +1,10 @@
-## ROS2 Tools: Advanced Usage and Debugging
+# ROS2 Tools
 
-### Overview
+## Overview
 
 In this section, we will delve into some of the most essential tools available in the ROS2 ecosystem. These tools are indispensable for debugging nodes and ROS2 applications. By exploring these utilities, you will enhance your understanding and capability to manage and troubleshoot your ROS2 projects effectively.
 
-### Objectives
+## Objectives
 
 By the end of this section, you will be proficient in:
 
@@ -13,7 +13,7 @@ By the end of this section, you will be proficient in:
 3. Visualizing the graph of your ROS2 application using `rqt_graph`.
 4. Exploring Turtlesim, a basic 2D simulation tool.
 
-### Running Nodes with `ros2 run`
+## Running Nodes with `ros2 run`
 
 The `ros2 run` command is fundamental for launching nodes. It allows you to execute nodes with different configurations, such as changing the node's name dynamically. Here is a step-by-step guide on how to use `ros2 run`:
 
@@ -43,7 +43,7 @@ The `ros2 run` command is fundamental for launching nodes. It allows you to exec
    ros2 run demo_nodes_cpp talker --ros-args -r __node:=my_custom_talker
    ```
 
-### Debugging Nodes with ROS2 CLI
+## Debugging Nodes with ROS2 CLI
 
 The ROS2 Command Line Interface (CLI) offers a suite of commands to interact with and debug nodes. Here are some crucial commands:
 
@@ -105,7 +105,7 @@ The ROS2 Command Line Interface (CLI) offers a suite of commands to interact wit
      ros2 service info <service_name>
      ```
 
-### Visualizing the ROS2 Graph with `rqt_graph`
+## Visualizing the ROS2 Graph with `rqt_graph`
 
 The `rqt_graph` tool provides a graphical representation of the nodes and topics in your ROS2 application, facilitating a comprehensive overview of your system's structure and communication flow.
 
@@ -122,7 +122,7 @@ The `rqt_graph` tool provides a graphical representation of the nodes and topics
    - **Topics** are shown as ellipses.
    - **Connections** between nodes and topics indicate the flow of messages.
 
-### Exploring Turtlesim
+## Exploring Turtlesim
 
 Turtlesim is a simple 2D simulation tool often used for introductory ROS2 tutorials. It helps users understand basic ROS2 concepts in a visual and interactive way.
 
@@ -139,7 +139,7 @@ Turtlesim is a simple 2D simulation tool often used for introductory ROS2 tutori
      ```
    - Use the keyboard to control the turtle's movement within the simulation window.
 
-### Practical Activity
+## Practical Activity
 
 As a hands-on exercise, create a new ROS2 package, write a simple publisher and subscriber node, and use the tools discussed to debug and visualize your application.
 
@@ -240,6 +240,6 @@ As a hands-on exercise, create a new ROS2 package, write a simple publisher and 
      ros2 run rqt_graph rqt_graph
      ```
 
-### Conclusion
+## Conclusion
 
 Mastering these ROS2 tools will significantly enhance your ability to develop, debug, and maintain robust ROS2 applications. By understanding how to run nodes with different options, leverage the ROS2 CLI for debugging, visualize node interactions, and experiment with Turtlesim, you are well-equipped to tackle more complex ROS2 projects.

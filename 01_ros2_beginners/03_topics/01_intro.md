@@ -1,20 +1,16 @@
-### Introduction
+# ROS2 Topics
 
-This tutorial delves into the communication features of ROS 2 (Robot Operating System 2), focusing on how nodes communicate using ROS 2 topics. By the end of this section, you will have the skills to enable inter-node communication through ROS 2 topics, utilizing both Python and C++. Additionally, you will learn how to debug topics using ROS 2 tools, experiment with Turtlesim, and apply your knowledge in a practical activity.
-
-### Understanding ROS 2 Topics
-
-#### Conceptual Overview
+## Conceptual Overview
 
 A ROS 2 topic facilitates message passing between nodes in a publish/subscribe model. Nodes can publish messages to a topic or subscribe to receive messages from a topic. This decouples the producer and consumer of information, enhancing modularity and scalability in robotic systems.
 
-#### Real-Life Analogy
+## Real-Life Analogy
 
 Consider a radio station (publisher) broadcasting on a specific frequency (topic). Listeners (subscribers) tune in to that frequency to receive the broadcast. Similarly, in ROS 2, a node publishes messages on a topic, and other nodes subscribe to this topic to receive the messages.
 
 ### Writing Your Own Topic (Publisher/Subscriber)
 
-#### In Python
+## In Python
 
 1. **Publisher Node**:
 
@@ -77,7 +73,7 @@ Consider a radio station (publisher) broadcasting on a specific frequency (topic
        main()
    ```
 
-#### In C++
+## In C++
 
 1. **Publisher Node**:
 

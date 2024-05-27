@@ -1,14 +1,14 @@
-## Launching Your First ROS 2 Program
+# Launching Your First ROS 2 Program
 
-### Prerequisites
+## Prerequisites
 
 Before proceeding, ensure that you have successfully installed ROS 2 and correctly set up your environment. This tutorial assumes that you have followed the installation instructions and configured your environment as described in the ROS 2 documentation. If you encounter issues, refer back to the installation steps to verify that everything was set up correctly.
 
-### Verifying ROS 2 Installation
+## Verifying ROS 2 Installation
 
 To confirm that ROS 2 is properly installed and configured, you can perform a simple test by launching a pre-existing example. This test will help you verify that your installation is functional before you proceed to writing your own ROS 2 programs.
 
-### Step-by-Step Guide
+## Step-by-Step Guide
 
 1. **Open a Terminal**
    Begin by opening a terminal window. This will be your interface for executing ROS 2 commands.
@@ -65,13 +65,9 @@ To confirm that ROS 2 is properly installed and configured, you can perform a si
    Ctrl+C
    ```
 
-### Troubleshooting
+## Troubleshooting
 
 - **No Output from `ros2 run` Command:**
   Ensure that the ROS 2 setup file has been sourced correctly in both terminal windows.
 - **Error Messages:**
   Verify that the `demo_nodes_cpp` package is correctly installed. If it is not, reinstall ROS 2 and ensure all default packages are included.
-
-### Conclusion
-
-By following this tutorial, you have successfully launched and linked two ROS 2 example nodes: `talker` and `listener`. This confirms that your ROS 2 installation is functional. You are now ready to proceed to more advanced topics, including writing and deploying your own ROS 2 programs.

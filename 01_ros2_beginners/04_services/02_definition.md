@@ -1,11 +1,10 @@
+# ROS 2 Services
 
-## ROS 2 Services
-
-### Introduction to ROS 2 Services
+## Introduction to ROS 2 Services
 
 ROS 2 services provide a synchronous communication mechanism between nodes in a ROS 2 system. This tutorial will introduce ROS 2 services through a detailed explanation and practical examples, comparing them with real-life scenarios and typical applications in robotics.
 
-### Real-Life Analogy: Online Weather Service
+## Real-Life Analogy: Online Weather Service
 
 To understand ROS 2 services, consider the analogy of an online weather service:
 
@@ -14,17 +13,17 @@ To understand ROS 2 services, consider the analogy of an online weather service:
 
 In this analogy, the URL used for the HTTP request is akin to the service name in ROS 2. The client sends a well-formed request (location data), and the server responds with the appropriate data (weather information).
 
-### ROS 2 Services in Practice
+## ROS 2 Services in Practice
 
 In ROS 2, services facilitate a client-server architecture where nodes can request specific actions from other nodes. This section will delve into the implementation details and practical usage of ROS 2 services.
 
-#### Key Concepts
+## Key Concepts
 
 1. **Service Name**: A unique identifier for the service, similar to the URL in the analogy.
 2. **Request Message**: The data structure sent by the client to the server.
 3. **Response Message**: The data structure sent by the server back to the client.
 
-#### Example: LED Control in Robotics
+## Example: LED Control in Robotics
 
 Consider a scenario in a robotics application where you need to control an LED panel:
 
@@ -37,7 +36,7 @@ Consider a scenario in a robotics application where you need to control an LED p
    - **Role**: Monitors the battery level and triggers actions based on its state.
    - **Service Client**: Sends requests to the `set_led` service to turn LEDs on or off based on battery status.
 
-#### Service Definition
+## Service Definition
 
 For the `set_led` service, you would define the request and response messages as follows:
 
@@ -52,7 +51,7 @@ bool state
 bool success
 ```
 
-#### Implementation in ROS 2 (Python Example)
+## Implementation in ROS 2 (Python Example)
 
 1. **Service Server (LED Panel Node)**:
 
@@ -146,10 +145,10 @@ if __name__ == '__main__':
     main()
 ```
 
-### Summary
+## Summary
 
 ROS 2 services provide a powerful mechanism for implementing client-server communication in robotic systems. They enable nodes to request specific actions from other nodes and receive responses, ensuring a structured and reliable exchange of information. This tutorial has covered the fundamental concepts and provided practical examples to illustrate how to define, implement, and use ROS 2 services effectively.
 
-### Conclusion
+## Conclusion
 
 In conclusion, ROS 2 services complement the unidirectional data streams of topics by offering synchronous communication suitable for request-response interactions. They are essential for scenarios where nodes need to perform specific actions based on requests and provide a robust framework for building complex robotic applications.

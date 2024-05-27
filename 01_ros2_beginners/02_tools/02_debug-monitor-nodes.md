@@ -1,10 +1,10 @@
-## Comprehensive Tutorial on Creating and Managing ROS2 Nodes
+# Comprehensive Tutorial on Creating and Managing ROS2 Nodes
 
 This tutorial provides a detailed guide on creating and managing ROS2 nodes using Python and C++. It includes instructions on using the ROS2 command-line tools for efficient node management.
 
-### 1. Creating Python and C++ Nodes
+## 1. Creating Python and C++ Nodes
 
-#### Python Nodes
+## Python Nodes
 
 To create a Python node, you need to follow these steps:
 
@@ -55,7 +55,7 @@ To create a Python node, you need to follow these steps:
    )
    ```
 
-#### C++ Nodes
+## C++ Nodes
 
 For a C++ node, follow these steps:
 
@@ -98,7 +98,7 @@ For a C++ node, follow these steps:
    ament_package()
    ```
 
-### 2. Building and Installing Nodes
+## 2. Building and Installing Nodes
 
 After writing your node scripts, build and install them in your ROS2 workspace:
 
@@ -113,11 +113,11 @@ After writing your node scripts, build and install them in your ROS2 workspace:
    source install/setup.bash
    ```
 
-### 3. Using ROS2 Command Line Tools
+## 3. Using ROS2 Command Line Tools
 
 The ROS2 command-line tools provide a powerful way to manage your nodes.
 
-#### 3.1 Launching Nodes
+## 3.1 Launching Nodes
 
 You can launch your nodes using the `ros2 run` command:
 
@@ -132,7 +132,7 @@ ros2 run my_python_package my_python_node
 ros2 run my_cpp_package my_cpp_node
 ```
 
-#### 3.2 Listing and Inspecting Nodes
+## 3.2 Listing and Inspecting Nodes
 
 To list all running nodes:
 
@@ -146,7 +146,7 @@ To get detailed information about a specific node:
 ros2 node info <node_name>
 ```
 
-#### 3.3 Sourcing Environment
+## 3.3 Sourcing Environment
 
 Ensure your environment is correctly sourced by adding the following lines to your `.bashrc`:
 
@@ -157,9 +157,9 @@ source ~/ros2_ws/install/setup.bash
 
 If these lines are not sourced, you will encounter errors when running ROS2 commands.
 
-### 4. Handling Common Issues
+## 4. Handling Common Issues
 
-#### 4.1 Sourcing Errors
+## 4.1 Sourcing Errors
 
 If you encounter `command not found` errors, it indicates that the environment is not properly sourced. Source it manually:
 
@@ -168,11 +168,11 @@ source /opt/ros/foxy/setup.bash
 source ~/ros2_ws/install/setup.bash
 ```
 
-#### 4.2 Node Conflicts
+## 4.2 Node Conflicts
 
 Avoid running two nodes with the same name to prevent conflicts in the ROS graph. Ensure each node has a unique name.
 
-### 5. Additional Command-Line Tools
+## 5. Additional Command-Line Tools
 
 Here are some additional useful ROS2 command-line tools:
 
@@ -180,6 +180,6 @@ Here are some additional useful ROS2 command-line tools:
 - `ros2 topic list`: Lists all topics.
 - `ros2 service list`: Lists all services.
 
-### Conclusion
+## Conclusion
 
 This tutorial has provided a comprehensive guide to creating and managing ROS2 nodes using Python and C++. By following these instructions and utilizing the ROS2 command-line tools, you can efficiently develop and manage your ROS2 applications. Ensure your environment is correctly sourced and avoid node name conflicts for smooth operation.

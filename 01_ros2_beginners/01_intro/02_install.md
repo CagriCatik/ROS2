@@ -1,8 +1,8 @@
-## Installing ROS 2 Humble
+# Installing ROS 2 Humble
 
 This tutorial provides a detailed, step-by-step guide to installing ROS 2 Humble on Kubuntu 22.04. Whether you are using a dual-boot setup or a virtual machine, these instructions will guide you through the process accurately and efficiently.
 
-### Prerequisites
+## Prerequisites
 
 Before beginning the installation, ensure that you have Kubuntu 22.04 installed and that your system is up to date. Open a terminal and update your package lists:
 
@@ -11,7 +11,7 @@ sudo apt update
 sudo apt upgrade
 ```
 
-### Setting Up Locale
+## Setting Up Locale
 
 ROS 2 requires UTF-8 locale support. Verify your locale settings and set them if necessary:
 
@@ -25,7 +25,7 @@ sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
 export LANG=en_US.UTF-8  # Set the environment variable
 ```
 
-### Adding ROS 2 Package Sources
+## Adding ROS 2 Package Sources
 
 To install ROS 2, you need to add the ROS 2 package sources to your system. Begin by ensuring the `universe` repository is enabled:
 
@@ -44,7 +44,7 @@ sudo sh -c 'echo "deb [trusted=yes] http://packages.ros.org/ros2/ubuntu $(lsb_re
 sudo apt update
 ```
 
-### Installing ROS 2
+## Installing ROS 2
 
 With the sources added, you can now install ROS 2. There are different configurations available, but for a comprehensive setup, install the Desktop version, which includes the ROS base along with various development tools:
 
@@ -54,7 +54,7 @@ sudo apt install ros-humble-desktop
 
 This installation may take some time as it involves downloading several packages. Confirm the installation when prompted.
 
-### Setting Up the Environment
+## Setting Up the Environment
 
 After installation, you need to source the ROS 2 environment. To make this automatic for every terminal session, add the following line to your `.bashrc` file:
 
@@ -63,7 +63,7 @@ echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 ```
 
-### Verifying the Installation
+## Verifying the Installation
 
 To verify that ROS 2 is installed correctly, open a new terminal and run:
 
@@ -73,7 +73,7 @@ ros2 --version
 
 This should output the version of ROS 2 you have installed, indicating a successful installation.
 
-### Installing Additional ROS 2 Packages
+## Installing Additional ROS 2 Packages
 
 To install additional ROS 2 packages, use the following command pattern:
 
@@ -86,9 +86,3 @@ Replace `<package_name>` with the specific package you need. For instance, to in
 ```bash
 sudo apt install ros-humble-turtlesim
 ```
-
-### Conclusion
-
-Following these instructions will set up a fully functional ROS 2 Humble environment on Kubuntu 22.04. For further configuration and advanced usage, refer to the official ROS 2 documentation and tutorials available on [docs.ros.org](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html).
-
-Ensure to keep your ROS 2 installation and system packages up to date to benefit from the latest features and security updates. For any additional help or troubleshooting, consult the ROS community and forums, where you can find a wealth of information and support.

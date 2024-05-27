@@ -59,11 +59,3 @@ Ensure you have root privileges to execute the script.
    ```bash
    pip install -r requirements.txt
    ```
-
-## Acknowledgments
-
-- The ROS2 installation script is adapted from the [ROS2 Documentation](https://index.ros.org/doc/ros2/Installation/Linux-Install-Debians/) by Open Robotics.
-
-Feel free to contribute, modify, or provide feedback to enhance the scripts and improve the overall ROS2 setup experience.
-
----
