@@ -1,4 +1,4 @@
-# Comprehensive Tutorial on Creating and Managing ROS2 Nodes
+# Creating and Managing ROS2 Nodes
 
 This tutorial provides a detailed guide on creating and managing ROS2 nodes using Python and C++. It includes instructions on using the ROS2 command-line tools for efficient node management.
 
@@ -29,6 +29,7 @@ To create a Python node, you need to follow these steps:
    if __name__ == '__main__':
        main()
    ```
+
 2. **Package Setup**: Ensure your package is correctly set up. The `setup.py` should include the necessary entry points:
 
    ```python
@@ -79,6 +80,7 @@ For a C++ node, follow these steps:
        return 0;
    }
    ```
+
 2. **CMake Setup**: Ensure your `CMakeLists.txt` is properly configured:
 
    ```cmake
@@ -107,6 +109,7 @@ After writing your node scripts, build and install them in your ROS2 workspace:
    ```sh
    colcon build --packages-select my_python_package my_cpp_package
    ```
+
 2. **Source the Environment**:
 
    ```sh

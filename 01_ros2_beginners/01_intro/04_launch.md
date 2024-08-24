@@ -27,12 +27,14 @@ To confirm that ROS 2 is properly installed and configured, you can perform a si
    echo "source /opt/ros/<distro>/setup.bash" >> ~/.bashrc
    source ~/.bashrc
    ```
+
 3. **Verify ROS 2 Command Availability**
    To verify that ROS 2 commands are available, type `ros2` followed by pressing the `Tab` key twice. You should see a list of ROS 2 commands if everything is set up correctly. If no commands appear, check your installation and environment setup.
 
    ```sh
    ros2 <Tab><Tab>
    ```
+
 4. **Running the Talker Example**
    Now, let's run an example node called `talker`. This node is part of the `demo_nodes_cpp` package and it publishes messages.
 
@@ -45,6 +47,7 @@ To confirm that ROS 2 is properly installed and configured, you can perform a si
    ```
    [INFO] [talker]: Publishing: 'Hello World: <counter>'
    ```
+
 5. **Running the Listener Example**
    Open another terminal window, source the ROS 2 setup file again, and then run the `listener` node from the same package. This node will subscribe to the messages published by the `talker` node and print them.
 
@@ -58,6 +61,7 @@ To confirm that ROS 2 is properly installed and configured, you can perform a si
    ```
    [INFO] [listener]: I heard: 'Hello World: <counter>'
    ```
+
 6. **Stopping the Nodes**
    To stop the nodes, use `Ctrl+C` in each terminal window where the nodes are running. This will gracefully terminate the nodes.
 

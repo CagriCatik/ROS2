@@ -2,10 +2,10 @@
 
 ## Introduction
 
-- ROS2
-- Install ROS2
-- Setup ROS2
-- Launch the first ROS2 Program
+- [ ] Introduction
+- [ ] Install ROS2
+- [ ] Setup ROS2
+- [ ] Launch the first ROS2 Program
   
 ## Tools
 
@@ -56,11 +56,23 @@
 - Debug Msg and Srv with ROS2 Tools
 - Assignment
 
-
 ## Node Settings
+
+- Introduction
+- What is a ROS2 Parameter?
+- Declare Your Parameters
+- Get Parameters from a Python Node
+- Get Parameters from a C++ Node
+- Assignment
 
 ## Launch Files
 
+- Introduction
+- What is a ROS2 Launch File?
+- Create and Install a Launch File
+- Configure Your Nodes in a Launch File
+- Assignment
+ 
 ## Q&A
 
 - Msg vs. Srv

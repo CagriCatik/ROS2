@@ -52,3 +52,6 @@ CATKIN_IGNORE
 
 # Image
 *.AppImage
+
+# Markdown
+important.md
